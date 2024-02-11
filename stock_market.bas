@@ -99,8 +99,11 @@ greatest_vol = 0
     
             If Cells(x, 10).Value >= 0 Then
                 Cells(x, 10).Interior.ColorIndex = 4
+                'Not sure if this was needed, but the grading rubric said change % needed conditional formatting
+                Cells(x, 11).Interior.ColorIndex = 4
                 Else
                     Cells(x, 10).Interior.ColorIndex = 3
+                    Cells(x, 11).Interior.ColorIndex = 3
                 End If
     
             If greatest_increase < Cells(x, 11).Value Then
@@ -123,7 +126,7 @@ greatest_vol = 0
         
     Next x
 
-'Formatting code (not sure if it was required)
+'Formatting code (not sure if it was needed)
 Range("K2:K" & lastrow).NumberFormat = "0.00%"
 Range("S2:S3").NumberFormat = "0.00%"
 Range("S4").NumberFormat = "#,##0"
