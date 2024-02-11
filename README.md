@@ -1,1 +1,1 @@
-# Stock-Market-Analysis
+Most of this code is based off exercises done in class such as the credit card checker and others. I've added some comments in the code to breakdown which section of code does what. I had to look up how the worksheet function and NumberFormat worked on stackoverflow so I derived that code from there.
